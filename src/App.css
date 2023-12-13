@@ -3,6 +3,10 @@
   margin: 50px 30px;
   padding: 25px 15px;
 }
+::selection{
+  background-color: transparent;
+}
+
 .container{
   display: flex;
   flex-direction: column;
@@ -12,4 +16,20 @@
   overflow-wrap: break-word;
   list-style-type: "👉";
   cursor: pointer;
+
 }
+.container ul li::selection{
+  background-color: transparent;
+}
+.done{
+  text-decoration: line-through;
+}
+.container div{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+}
+.del{
+  cursor: pointer;
+  }
